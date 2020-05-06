@@ -1,0 +1,64 @@
+body{
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  width: 80%;
+}
+
+header{
+  padding: 1%;
+  margin: 5% 0 0 0;
+  border-bottom: solid 1px black;
+}
+
+h1{
+  margin: 0;
+  font-size: 100px;
+}
+
+span{
+  color: purple;
+}
+
+.canvas{
+  position: relative;
+  height: 340px;
+}
+
+button{
+  border-radius: 10px;
+  border: solid 1px grey;
+  padding: 10px 15px;
+  margin: 0 8px;
+  font-size: 20px;
+  width: 180px;
+}
+
+#restart{
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  margin-left: -90px;
+}
+
+p{
+  font-size: 25px;
+}
+
+footer{
+  position: relative;
+  bottom: -50px;
+  color: purple;
+  margin: 0;
+  padding: 20px;
+  border-top: solid 1px black;
+}
+
+@media (max-width: 1435px){
+  h1{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
