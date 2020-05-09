@@ -17,7 +17,7 @@ h1 {
 }
 
 span {
-  color: purple;
+  color: rgb(165, 85, 165);
 }
 
 .canvas {
@@ -69,6 +69,33 @@ button {
   margin: 0 30px;
   font-size: 20px;
   width: 180px;
+  cursor: pointer;
+  z-index: 0;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover {
+  color: white;
+  border: none;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  background: rgb(190, 141, 190);
+  z-index: -1;
+  transition: 0.5s;
+  border-radius: 0 0 50% 50%;
+}
+
+button:hover::before {
+  height: 180%;
 }
 
 #restart {
@@ -82,10 +109,60 @@ p {
   font-size: 25px;
 }
 
+.winnerPara {
+  opacity: 0;
+  /* transition: opacity; */
+  /* animation: showup 3s; */
+  /* will-change: opacity; */
+}
+
+/* @keyframes showUp {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 20px;
+    opacity: 1;
+  }
+} */
+
+/* .showup {
+  animation: showUp 3s;
+} */
+
+.resultPara {
+  opacity: 0;
+  /* transition: opacity; */
+  /* will-change: opacity; */
+}
+
+/* 
+.winnerPara.faded-out {
+  opacity: 0;
+}
+*/
+
+.faded-in {
+  opacity: 1;
+  /* animation: showup 3s; */
+}
+
+/* @keyframes showup {
+  from {
+    left: 0;
+    opacity: 0;
+  }
+  to {
+    left: 10px;
+    opacity: 1;
+  }
+} */
+
 footer {
   position: relative;
   bottom: -30px;
-  color: purple;
+  color: rgb(165, 85, 165);
   margin: 0;
   padding: 20px;
   border-top: solid 1px black;
