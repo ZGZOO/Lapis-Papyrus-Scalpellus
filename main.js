@@ -186,3 +186,16 @@ document.getElementById("restart").addEventListener("click", function () {
   resetGame();
   console.log("Computer: " + computer.choice + "; Player: " + player.choice);
 });
+
+let bgmusic = new Audio();
+bgmusic.src = "bgmusic.mp3";
+
+document.getElementById("musicButton").addEventListener("click", function (e) {
+  if (e.target.innerHTML === "play") {
+    e.target.innerHTML = "stop";
+    bgmusic.play();
+  } else {
+    e.target.innerHTML = "play";
+    bgmusic.pause();
+  }
+});
