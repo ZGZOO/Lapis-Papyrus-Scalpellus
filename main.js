@@ -187,6 +187,7 @@ document.getElementById("restart").addEventListener("click", function () {
   console.log("Computer: " + computer.choice + "; Player: " + player.choice);
 });
 
+//add background music
 let bgmusic = new Audio();
 bgmusic.src = "bgmusic.mp3";
 
