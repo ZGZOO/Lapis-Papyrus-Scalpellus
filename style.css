@@ -1,3 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap");
+
+html {
+  background: url(/pics/greekbg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -13,6 +23,7 @@ header {
 
 h1 {
   margin: 0;
+  font-family: "Caesar Dressing", cursive;
   font-size: 100px;
 }
 
