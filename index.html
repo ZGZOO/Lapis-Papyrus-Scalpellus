@@ -16,10 +16,12 @@
     </header>
 
     <div class="canvas">
-      <h3>Make your choice below by clicking one of the buttons</h3>
-
-      <div class="subcanvas">
-        <div id="threepicsdiv">
+      <div class="playarea" id="computerarea"></div>
+      <div class="playarea" id="choicesarea">
+        <div class="picdiv" id="Lapis"></div>
+        <div class="picdiv" id="Papyrus"></div>
+        <div class="picdiv" id="Scalpellus"></div>
+        <!-- <div id="threepicsdiv">
           <div class="picdiv" id="rockpicdiv"></div>
           <div class="picdiv" id="paperpicdiv"></div>
           <div class="picdiv" id="scissorspicdiv"></div>
@@ -29,11 +31,21 @@
           <button class="heyButton" id="Lapis">Lapis</button>
           <button class="heyButton" id="Papyrus">Papyrus</button>
           <button class="heyButton" id="Scalpellus">Scalpellus</button>
-        </div>
+        </div> -->
+      </div>
+      <div class="playarea" id="playerarea"></div>
+
+      <h3>Make your choice by clicking one of the buttons above</h3>
+
+      <div class="pointscanvas">
+        <label class="points" id="computerpoints"></label>
+        <label>:</label>
+        <label class="points" id="playerpoints"></label>
       </div>
 
-      <p id="winnerIs">Winner is...</p>
+      <!-- <p id="winnerIs">Winner is...</p> -->
 
+      <button id="newround">New Round</button>
       <button id="restart">Restart Game</button>
     </div>
 

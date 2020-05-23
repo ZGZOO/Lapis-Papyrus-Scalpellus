@@ -4,11 +4,13 @@ const options = ["Lapis", "Papyrus", "Scalpellus"];
 //Objects to store information on the computer
 const player = {
   choice: null,
+  points: 0,
 };
 
 //Objects to store information on the player
 const computer = {
   choice: null,
+  points: 0,
 };
 
 //function: computer makes a random choice
@@ -73,6 +75,8 @@ function compareChoices(computer, player, array) {
       "Computer & You!",
       "It is a tie. Both computer and player chose " + computer + "."
     );
+    player.points++;
+    computer.points++;
   } else if (computer === array[0]) {
     if (player === array[1]) {
       renderResult(
@@ -83,6 +87,7 @@ function compareChoices(computer, player, array) {
           player +
           "."
       );
+      player.points++;
     } else {
       renderResult(
         "Computer!",
@@ -92,6 +97,7 @@ function compareChoices(computer, player, array) {
           player +
           "."
       );
+      computer.points++;
     }
   } else if (computer === array[1]) {
     if (player === array[0]) {
@@ -103,6 +109,7 @@ function compareChoices(computer, player, array) {
           player +
           "."
       );
+      computer.points++;
     } else {
       renderResult(
         "You!",
@@ -112,6 +119,7 @@ function compareChoices(computer, player, array) {
           player +
           "."
       );
+      player.points++;
     }
   } else if (computer === array[2]) {
     if (player === array[0]) {
@@ -123,6 +131,7 @@ function compareChoices(computer, player, array) {
           player +
           "."
       );
+      player.points++;
     } else {
       renderResult(
         "Computer!",
@@ -132,6 +141,7 @@ function compareChoices(computer, player, array) {
           player +
           "."
       );
+      computer.points++;
     }
   }
 }
@@ -140,6 +150,7 @@ function resetGame() {
   computer.choice = computerChooses(options);
   player.choice = null;
   document.getElementById("restart").disabled = true;
+  document.getElementById("newround").disabled = false;
 }
 
 //======================================================================

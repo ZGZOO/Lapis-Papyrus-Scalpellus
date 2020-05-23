@@ -17,8 +17,10 @@ body {
 
 header {
   padding: 1%;
-  margin: 5% 0 0 0;
+  margin: 4% auto 0 auto;
   border-bottom: solid 1px black;
+  width: 90%;
+  /* background: blanchedalmond; */
 }
 
 h1 {
@@ -27,50 +29,81 @@ h1 {
   font-size: 100px;
 }
 
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
 span {
   color: rgb(165, 85, 165);
 }
 
 .canvas {
-  position: relative;
   height: 520px;
-  /* background: red; */
+  background: red;
 }
 
-/* #buttonDiv {
-  background: blue;
-} */
+.playarea {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin: 0 20px;
+  background: khaki;
+  border-bottom: solid 1px black;
+}
+
+#choicesarea {
+  width: 100px;
+  text-align: center;
+  background: darkolivegreen;
+}
 
 .picdiv {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+#Lapis {
+  width: 80px;
+  background: url("pics/rock_rest.svg") no-repeat center center;
+}
+
+#Papyrus {
+  background: url("pics/paper_rest.svg") no-repeat center center;
+}
+
+#Scalpellus {
+  background: url("pics/scissors_rest.svg") no-repeat center center;
+}
+
+#Lapis:hover {
+  background: url("pics/rock_chosen.svg") no-repeat center center;
+}
+
+#Papyrus:hover {
+  background: url("pics/paper_chosen.svg") no-repeat center center;
+}
+
+#Scalpellus:hover {
+  background: url("pics/scissors_chosen.svg") no-repeat center center;
+}
+
+label {
+  font-size: 60px;
   display: inline-block;
-  margin: 0 45px;
+  vertical-align: middle;
 }
 
-#rockpicdiv {
-  background-size: 180px 180px;
-  background: url("pics/rock_rest.svg") no-repeat;
-}
-
-#paperpicdiv {
-  background: url("pics/paper_rest.svg") no-repeat;
-}
-
-#scissorspicdiv {
-  background: url("pics/scissors_rest.svg") no-repeat;
-}
-
-#rockpicdiv:hover {
-  background: url("pics/rock_chosen.svg") no-repeat;
-}
-
-#paperpicdiv:hover {
-  background: url("pics/paper_chosen.svg") no-repeat;
-}
-
-#scissorspicdiv:hover {
-  background: url("pics/scissors_chosen.svg") no-repeat;
+.points {
+  width: 80px;
+  height: 80px;
+  background-color: chocolate;
 }
 
 button {
@@ -109,66 +142,21 @@ button:hover::before {
   height: 180%;
 }
 
-#restart {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  margin-left: -90px;
-}
-
 p {
   font-size: 25px;
 }
 
 .winnerPara {
   opacity: 0;
-  /* transition: opacity; */
-  /* animation: showup 3s; */
-  /* will-change: opacity; */
 }
-
-/* @keyframes showUp {
-  from {
-    top: 0;
-    opacity: 0;
-  }
-  to {
-    top: 20px;
-    opacity: 1;
-  }
-} */
-
-/* .showup {
-  animation: showUp 3s;
-} */
 
 .resultPara {
   opacity: 0;
-  /* transition: opacity; */
-  /* will-change: opacity; */
 }
-
-/* 
-.winnerPara.faded-out {
-  opacity: 0;
-}
-*/
 
 .faded-in {
   opacity: 1;
-  /* animation: showup 3s; */
 }
-
-/* @keyframes showup {
-  from {
-    left: 0;
-    opacity: 0;
-  }
-  to {
-    left: 10px;
-    opacity: 1;
-  }
-} */
 
 footer {
   position: relative;
